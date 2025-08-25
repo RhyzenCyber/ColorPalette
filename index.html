@@ -2,38 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Background Color Palette Demo</title>
+  <title>PTT-Style Story Background</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <style>
-    body {
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
       font-family: 'Courier New', monospace;
-      color: #ffffff;
     }
-    .color-block {
-      padding: 60px 20px;
-      min-height: 100vh;
+
+    body {
       display: flex;
-      align-items: center;
       justify-content: center;
-      text-align: center;
-      flex-direction: column;
+      align-items: center;
     }
-    .label {
-      font-size: 1.5em;
-      margin-top: 10px;
-      color: rgba(255, 255, 255, 0.7);
+
+    .background {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      display: flex;
+    }
+
+    .left-half {
+      width: 50%;
+      background-color: #1e1e1e; /* dark gray */
+    }
+
+    .right-half {
+      width: 50%;
+      background-color: #001f3f; /* deep navy */
+    }
+
+    .story-box {
+      position: absolute;
+      width: 600px;
+      max-width: 90%;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.7); /* semi-transparent black */
+      color: #00ffcc; /* aqua text */
+      border: 2px solid #ff0066; /* magenta border */
+      box-shadow: 0 0 15px #00ffcc;
+    }
+
+    h1 {
+      color: #ffff00;
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+
+    p {
+      line-height: 1.6;
     }
   </style>
 </head>
 <body>
 
-  <div class="color-block" style="background-color: #1e1e1e;">
-    <h1>#1e1e1e - Dark Gray</h1>
-    <div class="label">Base for dark mode themes</div>
+  <div class="background">
+    <div class="left-half"></div>
+    <div class="right-half"></div>
   </div>
 
-  <div class="color-block" style="background-color: #121212;">
+  <div class="story-box">
+    <h1>The Silent Divide</h1>
+    <p>
+      In a land where sacred beliefs draw unyielding borders, two paths emerge—neither wholly wrong, nor fully right. The air buzzes with sermons and swords.
+      Between whispers of prophets and cries of war, a truth lies buried: unity isn't blasphemy—it's the only salvation.
+    </p>
+  </div>
+
+</body>
+</html>
     <h1>#121212 - Jet Black</h1>
     <div class="label">Ultra-dark base</div>
   </div>
