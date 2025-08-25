@@ -1,39 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Religion Conflict Story</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FFFFF0;
-            color: #0D0D0D;
-            margin: 0;
-            padding: 0;
-        }
-        header, footer {
-            background-color: #8B0000;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-        }
-        .page {
-            display: none;
-            padding: 2rem;
-            min-height: 60vh;
-        }
-        .page.active {
-            display: block;
-        }
-        .nav-buttons {
-            text-align: center;
-            margin: 2rem;
-        }
-        button {
-            background-color: #36454F;
-            color: white;
-            border: none;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PTT Style Story</title>
+  <style>
+    body {
+      background-color: #1e1e1e;
+      color: #00ffcc;
+      font-family: "Courier New", monospace;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #111;
+      padding: 10px;
+      position: fixed;
+      width: 100%;
+      z-index: 1000;
+    }
+    nav a {
+      color: #ff0066;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 60px 20px;
+      border-bottom: 1px solid #333;
+      min-height: 100vh;
+    }
+    h1, h2 {
+      color: #ffff00;
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #ff0066;
+      color: #fff;
+      padding: 8px 12px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#section1">1</a>
+    <a href="#section2">2</a>
+    <a href="#section3">3</a>
+    <a href="#section4">4</a>
+    <a href="#section5">5</a>
+    <a href="#section6">6</a>
+    <a href="#section7">7</a>
+    <a href="#section8">8</a>
+    <a href="#section9">9</a>
+    <a href="#section10">10</a>
+    <a href="#section11">11</a>
+    <a href="#section12">12</a>
+    <a href="#section13">13</a>
+    <a href="#section14">14</a>
+    <a href="#section15">15</a>
+  </nav>
+
+  <button class="scroll-top" onclick="window.scrollTo(0,0)">↑ Top</button>
+
+  <!-- SECTION TEMPLATE -->
+  <section id="section1">
+    <h2>1. Prologue: The Silent War</h2>
+    <p>In the heart of a holy land divided by belief, whispers of forgotten truths stir the air. A war of ideologies brews beneath the silence.</p>
+  </section>
+
+  <section id="section2">
+    <h2>2. Sacred Bloodlines</h2>
+    <p>Two ancient tribes—descendants of prophets—cling to relics and texts that claim divine favor. Their history is soaked in both miracles and massacre.</p>
+  </section>
+
+  <section id="section3">
+    <h2>3. The Caravan Massacre</h2>
+    <p>When a peaceful Saracen caravan is slaughtered by crusaders, tension reignites. Vengeance becomes sacred. Peace becomes a prayer unanswered.</p>
+  </section>
+
+  <section id="section4">
+    <h2>4. The Scholar's Secret</h2>
+    <p>Hidden scrolls discovered by a monk unveil a prophecy—one that speaks not of war, but unity. Yet both sides fear it.</p>
+  </section>
+
+  <section id="section5">
+    <h2>5. The Desert Pact</h2>
+    <p>A forbidden meeting in the dunes brings together a Saracen general and a disillusioned Templar. They see the same light in different skies.</p>
+  </section>
+
+  <section id="section6">
+    <h2>6. Betrayal in the Temple</h2>
+    <p>Holy ground is defiled not by outsiders, but by those sworn to protect it. Power intoxicates the clergy. Truth is buried deeper.</p>
+  </section>
+
+  <section id="section7">
+    <h2>7. The Crimson Crescent</h2>
+    <p>A resistance rises under the banner of the Crimson Crescent—uniting outcasts from both factions. They fight not for faith, but for freedom.</p>
+  </section>
+
+  <section id="section8">
+    <h2>8. Scrolls of Fire</h2>
+    <p>The stolen prophecy is revealed to the world. Riots erupt. Cities burn. The idea of peace becomes the most dangerous weapon.</p>
+  </section>
+
+  <section id="section9">
+    <h2>9. The Oracle's Vision</h2>
+    <p>A blind oracle speaks of a child born under twin moons—destined to end the conflict. Both sides race to find or destroy the child.</p>
+  </section>
+
+  <section id="section10">
+    <h2>10. Siege of the Golden Gate</h2>
+    <p>A final stand is made at the ancient city gates. Neither army knows they march toward the same truth... nor the same lie.</p>
+  </section>
+
+  <section id="section11">
+    <h2>11. Ashes of the Faithful</h2>
+    <p>The temple burns. Icons melt. Still, the people kneel—not in fear, but in mourning. The gods remain silent.</p>
+  </section>
+
+  <section id="section12">
+    <h2>12. Echoes of the Martyrs</h2>
+    <p>Stories of rebels become psalms. Children sing of warriors who bled for no banner but hope. The legend grows.</p>
+  </section>
+
+  <section id="section13">
+    <h2>13. The Last Sermon</h2>
+    <p>One voice, broken but clear, delivers a final plea in the ruins. “We were not meant to conquer, but to coexist.”</p>
+  </section>
+
+  <section id="section14">
+    <h2>14. The Pact Reborn</h2>
+    <p>From the rubble, survivors form a new covenant—one not written in stone, but in shared suffering. A fragile beginning.</p>
+  </section>
+
+  <section id="section15">
+    <h2>15. Epilogue: The New Scroll</h2>
+    <p>A single parchment, written in both tongues, is placed at the altar. No title. Just a question: “What if we listened?”</p>
+  </section>
+
+</body>
+</html>
             padding: 0.75rem 1.5rem;
             margin: 0 0.5rem;
             cursor: pointer;
