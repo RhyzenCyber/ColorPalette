@@ -1,40 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Random Background Split</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: sans-serif;
-    }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Random Background Split</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
 
-    .container {
-      display: flex;
-      height: 100vh;
-      width: 100vw;
-    }
+    .container {
+      display: flex;
+      height: 100vh;
+      width: 100vw;
+    }
 
-    .left, .right {
-      flex: 1;
-    }
+    .left, .right {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
 
-    #downloadBtn {
-      position: absolute;
-      top: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      padding: 10px 20px;
-      background-color: white;
-      border: 1px solid #ccc;
-      cursor: pointer;
-      z-index: 1000;
-      font-weight: bold;
-    }
-  </style>
+  <script>
+    function getRandomColor() {
+      const colors = [
+        '#4A4E69', '#E2E8F0', '#D4A5A5', '#9A8C98', '#C9ADA7',
+        '#F2E9E4', '#A3CEF1', '#C6F1D6', '#FFE066', '#8D99AE'
+      ];
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    document.querySelector('.left').style.backgroundColor = getRandomColor();
+    document.querySelector('.right').style.backgroundColor = getRandomColor();
+  </script>
+</body>
+</html>  </style>
 </head>
 <body>
   <button id="downloadBtn">Download Image</button>
